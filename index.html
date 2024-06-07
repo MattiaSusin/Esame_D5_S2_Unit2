@@ -13,9 +13,9 @@
   </head>
   <body>
 
-    <div class="container-fluid bg- p-3"> <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PAGINA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <div class="container-fluid bg- p-3 bg-black d-flex justify-content-center"> <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PAGINA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
-        <div class="mx-5 d-flex justify-content-center bg-dark"><!-- !CONTENUTO -->
+        <div class="mx-5 d-flex justify-content-center bg-dark w-75"><!-- !CONTENUTO -->
 
   
   
@@ -37,22 +37,31 @@
       </nav>  -->--><!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
                 <div> <!-- !GENERI -->
                         <div> <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!TVSHOWS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                            <div class="d-flex flex-row mb-3">
-                                <h1 class="">TV Shows</h1>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Generes
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><hr class="dropdown-divider"></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                  </li>
-                          
-                        
-                            </div>
+                            <section class="container mt-4">
+                                <div class="d-flex  align-items-center">
+                                    <h2 class="text-white pe-5 py-5">Tv Shows</h2>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary
+                                        bg-black dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Genres
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Azione</a>
+                                            <a class="dropdown-item" href="#">Commedia</a>
+                                            <a class="dropdown-item" href="#">Drammatico</a>
+                                            <a class="dropdown-item" href="#">Fantascienza</a>
+                                        </div>
+                            
+                                    </div>
+                                    <form class="d-flex ms-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                                          </svg>
+                                    </form>
+                                        </section>
                         </div><!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TVSHOWS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
                         <div class="container"> <!-- **  GENERI1 -->
                             <section class="mb-5"> 
