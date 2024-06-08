@@ -1,9 +1,27 @@
-#riga1{
-    width: 1288px;
-}
 
-.dropdown-toggle img {
+/* .dropdown-toggle img {
     margin: 0;
     padding: 0;
     border: none;
+  }
+ */
+  .tredingMenu{
+
+translate: 0px 10px;
+  }
+
+  .Tv{
+    width: 1320px;
+  }
+  #text1{
+    translate: -16px 0px;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .card {
+    transition: transform .8s, box-shadow 0.3s;
   }
