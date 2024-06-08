@@ -59,14 +59,38 @@ translate: 0px 10px;
   svg path {
     fill: white;
   }
+  svg{
+    cursor: pointer;
+  }
 
-
-  #checkBox label{
+  input[type="checkbox"] {
+    appearance: none;
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
     position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    content: ""; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.6em;
+    height: 0.6em;
+    background-color: green;
+    transform: translate(-50%, -50%);
+  }
+
+  input[type="checkbox"]{
+
+    margin-top: 15px;
+    margin-right: 15px;
+    transform: translate(20%, 28%);
+  }
+
+  svg{
+    cursor: pointer;
   }
