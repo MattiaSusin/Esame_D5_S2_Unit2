@@ -26,3 +26,47 @@ translate: 0px 10px;
   .card {
     transition: transform .4s, box-shadow 0.3s;
   }
+
+  #pFooter{
+
+    cursor: pointer;
+  }
+
+  #svg{
+    cursor: pointer;
+  }
+
+  #btnP2:hover{background-color: white;
+  color: grey;}
+
+  hr{
+    color: gray;
+  }
+
+  .baby{
+    translate: -14px 10px;
+    object-fit: cover;
+  }
+  .imgBaby{
+    object-fit: cover;
+  }
+  .pencil{
+   width: 16px;
+  translate: -12px -17px;
+  color: white;
+  }
+
+  svg path {
+    fill: white;
+  }
+
+
+  #checkBox label{
+    position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  }

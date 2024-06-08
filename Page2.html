@@ -9,13 +9,19 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
   </head>
   <body class="bg-dark">
-    <div class="bg-black mb-5">
-      <img src="./Netflix-assets/assets/netflix_logo.png" alt="" width="150" />
+    <div class="container-fluid">
+      <div class="navbar">
+        <a class="" href="./Page1.html"
+          ><img src="./Netflix-assets/assets/netflix_logo.png" alt="" width="150px"
+        /></a>
+      </div>
     </div>
-    <div class="container container-fluid p-3 bg-black p-5 w-50">
+    <div class="container container-fluid p-3 bg-dark p-5 w-50">
       <h1 class="text-white fs-1 h-100">Edit Profile</h1>
       <hr class="my-4"/>
       <div class="container row">
@@ -23,8 +29,13 @@
         <div class="col-4 w-25"> 
           <!-- !!!!!!!!!!!!SINISTRA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
           <div> <!-- ??????????????????SVG?????????????????????????? -->
-            <img src="./Netflix-assets/assets/28b22a54c96662989843912cfceff789a6bae093.png" alt="">
-          </div> <!-- ??????????????????SVG?????????????????????????? -->
+            <img class="baby" src="./Netflix-assets/assets/avatar.png" alt="" width="160" >
+            
+          </div> 
+          <div class="pencil text-light border-light">
+            <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 122.88" style="enable-background:new 0 0 122.88 122.88" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+              <g><path class="st0" d="M61.44,0c33.93,0,61.44,27.51,61.44,61.44c0,33.93-27.51,61.44-61.44,61.44S0,95.37,0,61.44 C0,27.51,27.51,0,61.44,0L61.44,0z M52.56,84c-1.82,0.61-3.68,1.17-5.5,1.77c-1.82,0.61-3.64,1.21-5.5,1.82 c-4.34,1.4-6.71,2.19-7.23,2.33c-0.51,0.14-0.19-1.86,0.89-6.06l3.45-13.19l26.01-27.04l13.85,13.33L52.56,84L52.56,84L52.56,84z M78.48,33.84c-0.65-0.61-1.4-0.93-2.24-0.89c-0.84,0-1.59,0.33-2.19,0.98l-4.94,5.13l13.85,13.38l4.99-5.22 c0.61-0.61,0.84-1.4,0.84-2.24c0-0.84-0.33-1.63-0.93-2.19L78.48,33.84L78.48,33.84L78.48,33.84z"/></g></svg>
+          </div>
         </div><!-- !!!!!!!!!!!!SINISTRA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
         <div class=" col-6"><!-- !!!!!!!!!!!!!!!!!!!!!!!!DESTRA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -33,10 +44,19 @@
                     <button class=" text-white border border-0 w-100 my-4 py-2 bg-secondary fs-5">Strive Student</button>
                 </div><!-- *************BUTTON*************************** -->
                 <div> <!-- ************* DROPDOWN  *************************** -->
-                    <h3 class="text-light">Language:</h3>
-                    <button class="btn btn-secondary rounded-0 
-                                        bg-black dropdown-toggle bg-trasparent border border-white pe-4 pt-1 ps-4" type="submit" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    English</button>       
+                    <h3 class="text-light">Language:</h3> 
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btn btn-secondary rounded-0 
+                        bg-dark dropdown-toggle bg-trasparent border border-white pe-4 pt-1 ps-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Lenguage
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                          <li><a class="dropdown-item" href="#">Spanish</a></li>
+                          <li><a class="dropdown-item" href="#">German</a></li>
+                          <li><a class="dropdown-item" href="#">Italian</a></li>
+                        </ul>
+                      </div>   
                 </div><!-- ************* DROPDOWN  *************************** -->
                 <hr class="mt-5">
 
@@ -45,9 +65,9 @@
            <div> <!-- ???????????????????????? 2STEP????????????????????????????? -->
             <div>
                 <h3 class="mb-4 fs-3 text-light ">Maturity Settings:</h3>
-                <button class="text-white border border-0  bg-secondary pb-1 mb-2">ALL MATURITY RATINGS</button>
+                <button  class="text-white border border-0  bg-secondary pb-1 mb-2">ALL MATURITY RATINGS</button>
                 <P class="text-light">Show titles of all maturity ratings for this profile</P>
-                <button class="btn btn-trasparent text-secondary border border-secondary border rounded-0">EDIT</button>
+                <button id="btnP2" class="btn btn-trasparent text-secondary border border-secondary border rounded-0">EDIT</button>
             </div>
             <hr class="my-4">
            </div><!-- ???????????????????????? 2STEP????????????????????????????? -->
@@ -55,20 +75,20 @@
            <div> <!-- ???????????????????????? 3STEP????????????????????????????? -->
                 <h3 class="text-light">Autoplay controls</h3>
                 <form class="my-3"> 
-                    <span class="me-2"><input type="checkbox" required /></span><label class="text-light" for="checkbox">Autoplay next episode in a series on all devices</label>
+                    <span id="checkBox" class="me-2"><input type="checkbox" required /></span><label class="text-light" for="checkbox">Autoplay next episode in a series on all devices</label>
                   </form>
                 <form> 
                     <span class="me-2"><input type="checkbox" required /></span><label class="text-light" for="checkbox" class="me-4">Autoplay next episode in a series on all devices</label>
                 </form> 
            </div><!-- ???????????????????????? 3STEP????????????????????????????? -->
         </div><!-- !!!!!!!!!!!!!!!!!!!!!!!!DESTRA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-        <div class="row"> <!-- !!!!!!!!!!!!!!!!!!!!!!!!ULTIMO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="row w-75"> <!-- !!!!!!!!!!!!!!!!!!!!!!!!ULTIMO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
             <hr class="my-4">
             <div class="d-flex justify-content-around"> <!-- ????????????????????????BOTTONE 1???????????????????????? -->
                 
-                <button class="w-25 pt-2 pb-2 btn btn-trasparent text-secondary border border-secondary border rounded-0">SAVE</button>
-                <button class="w-25 pt-2 pb-2 btn btn-trasparent text-secondary border border-secondary border rounded-0">CANCEL</button>
-                <button class="w-25 pt-2 pb-2 btn btn-trasparent text-secondary border border-secondary border rounded-0" >DELETE PROFILE</button>
+                <button id="btnP2" class="col-2 pt-2 pb-2 btn btn-trasparent text-secondary border border-secondary border rounded-0">SAVE</button>
+                <button id="btnP2" class="col-2  pt-2 pb-2 btn btn-trasparent text-secondary border border-secondary border rounded-0">CANCEL</button>
+                <button id="btnP2" class="col-5 pt-2 pb-2 btn btn-trasparent text-secondary border border-secondary border rounded-0" >DELETE PROFILE</button>
         </div> <!-- !!!!!!!!!!!!!!!!!!!!!!!!ULTIMO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
       </div><!-- !!!!!!!!!!!!!!!!!!!!GRANDE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     </div>
